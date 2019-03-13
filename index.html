@@ -46,7 +46,7 @@
 				<ul>
 					<li class="scroll"><a href="#question">Услуги</a></li>
 					<li class="scroll"><a href="#open_form">Акция</a></li>
-					<li class="scroll"><a href="#adv">О нас</a></li>
+					<li class="scroll"><a href="#hub">О нас</a></li>
 					<li class="scroll"><a href="#step">Как мы работаем</a></li>
 					<li class="scroll"><a href="#contact">Контакты</a></li>
 				</ul>
@@ -61,8 +61,8 @@
 					<li>Акция — наружная мойка авто в подарок до 1-го апреля*</li>
 				</ul>
 				<div class="main_btns">
-					<a href="#mainFormWrapper" class="main_btn">Записаться <br>на диагностику</a>
-					<a href="#mainFormWrapper2" class="main_btn main_btn2">Выбрать услугу</a>
+					<a href="#service1FormWrapper" class="popup main_btn">Записаться <br>на диагностику</a>
+					<a href="#question" class="scroll2 main_btn main_btn2">Выбрать услугу</a>
 				</div>
 			</div>
 		</div>
@@ -132,6 +132,7 @@
 	</section>
 
 	<section class="question" id="question">
+		<img src="img/left_circle.png" alt="" class="circle">
 		<div class="container">
 			<h3>Решаем любые вопросы, связанные <br>с ремонтом и обслуживанием Tesla</h3>
 			<div class="row">
@@ -150,7 +151,7 @@
 						<li>Замена батареи</li>
 						<li>Ремонт пригнанных Tesla из США и Европы</li>
 					</ul>
-					<a href="#question1FormWrapper" class="main_btn">Записаться на сервис</a>
+					<a href="#service2FormWrapper" class="popup main_btn">Записаться на сервис</a>
 				</div>
 			</div>
 			<div class="row">
@@ -167,7 +168,7 @@
 						<li>Развал схождения</li>
 						<li>Заправка кондиционера</li>
 					</ul>
-					<a href="#question1FormWrapper" class="main_btn">Записаться на сервис</a>
+					<a href="#service3FormWrapper" class="popup main_btn">Записаться на сервис</a>
 				</div>
 				<div class="col-sm-6 col-lg-offset-1">
 					<img src="img/question_2.jpg" alt="">
@@ -192,7 +193,7 @@
 						<li>Устранение ошибок</li>
 						<li>Калибровка систем (рулевая, пневма, радара)</li>
 					</ul>
-					<a href="#question1FormWrapper" class="main_btn">Записаться на сервис</a>
+					<a href="#service4FormWrapper" class="popup main_btn">Записаться на сервис</a>
 				</div>
 			</div>
 		</div>
@@ -207,7 +208,7 @@
 						<div class="cols_text">
 							<h4>Продажа оригинальных запчастей и аксессуаров Tesla (новые и б/у)</h4>
 							<p>В наличии зарядки, переделанные под украинские розетки <br>и переходники.</p>
-							<a href="#cols1FormWrapper" class="main_btn">Узнать подробнее</a>
+							<a href="#cols1FormWrapper" class="popup main_btn">Узнать подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -217,7 +218,7 @@
 						<div class="cols_text">
 							<h4>Возникла поломка, но не можете приехать к нам?</h4>
 							<p>Ничего страшного! Закажите <br>услугу «Ремонт на выезде», и наши специалисты приедут к Вам <br>с оборудованием.</p>
-							<a href="#cols1FormWrapper" class="main_btn">Вызвать специалистов</a>
+							<a href="#cols2FormWrapper" class="popup main_btn">Вызвать специалистов</a>
 						</div>
 					</div>
 				</div>
@@ -227,7 +228,7 @@
 						<div class="cols_text">
 							<h4>Доставка автомобилей Tesla «под ключ» из США <br>и Европы!</h4>
 							<p>Выполним все необходимые работы по ремонту, ТО <br>и прошивке ПО.</p>
-							<a href="#cols1FormWrapper" class="main_btn">Узнать подробнее</a>
+							<a href="#cols3FormWrapper" class="popup main_btn">Узнать подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -278,7 +279,7 @@
 		</div>
 	</section>
 
-	<section class="hub">
+	<section class="hub" id="hub">
 		<div class="container">
 			<h3>Автосервис Tesla HUB</h3>
 			<div class="row">
@@ -383,7 +384,7 @@
 					<img class="main_picts" src="img/step_1.jpg" alt="">
 					<h4>Выберите услугу</h4>
 					<p>Наш менеджер свяжется <br>с Вами для уточнения списка работ и точной даты</p>
-					<a href="#stepFormWrapper" class="main_btn">Выбрать услугу</a>
+					<a href="#question" class="scroll2 main_btn">Выбрать услугу</a>
 				</div>
 				<div class="col-sm-3">
 					<img class="main_picts" src="img/step_2.jpg" alt="">
@@ -470,7 +471,6 @@
 		</div>
 	</section>
 
-
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -528,18 +528,96 @@
 	</div>
 
 	<div class="hidden">
-		<div class="form_wrapper" id="contactFormWrapper">
+		<div class="form_wrapper" id="service1FormWrapper">
 			<h6>Заполните форму,</h6>
-			<p>чтобы задать вопрос нашему специалисту</p>
-			<form method="post" class="form" id="contactForm" action="mail.php">
-				<input type="hidden" name="whatform" value="Форма - Задать вопрос" />
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы уточнить дату и время Вашего приезда</p>
+			<form method="post" class="form" id="service1Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Записаться на сервис (Главный экран)" />
 				<input type="text" name="name" placeholder="Ваше имя" />
 				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
-				<textarea name="message" placeholder="Ваш вопрос"></textarea>
-				<button class="main_btn">Задать вопрос</button>
+				<button class="main_btn">Записаться на сервис</button>
 			</form>
 		</div>
 	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="service2FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы уточнить дату и время Вашего приезда</p>
+			<form method="post" class="form" id="service2Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Записаться на сервис (Ремонт)" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Записаться на сервис</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="service3FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы уточнить дату и время Вашего приезда</p>
+			<form method="post" class="form" id="service3Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Записаться на сервис (ТО – техобслуживание)" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Записаться на сервис</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="service4FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы уточнить дату и время Вашего приезда</p>
+			<form method="post" class="form" id="service4Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Записаться на сервис (Опциональные услуги)" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Записаться на сервис</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="cols1FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы проконсультировать Вас об услуге.</p>
+			<form method="post" class="form" id="cols1Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Получить консультацию (Продажа оригинальных запчастей и аксессуаров Tesla)" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Получить консультацию</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="cols2FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы проконсультировать Вас об услуге.</p>
+			<form method="post" class="form" id="cols2Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Возникла поломка, но не можете приехать к нам?" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Получить консультацию</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form_wrapper" id="cols3FormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы проконсультировать Вас об услуге.</p>
+			<form method="post" class="form" id="cols3Form" action="mail.php">
+				<input type="hidden" name="whatform" value="Получить консультацию (Доставка автомобилей Tesla «под ключ» из США и Европы!)" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="main_btn">Получить консультацию</button>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>

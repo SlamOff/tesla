@@ -606,6 +606,14 @@ h2 {
 	position: relative;
 	z-index: 2;
 }
+.question .circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../img/left_circle.png);
+	width: 100%;
+	height: 803px;
+}
 .adv .adv_text.adv_text_left {
 	padding-left: 10rem;
 }
@@ -778,9 +786,9 @@ ul li {
 .hub .photos img {
 	max-width: 100%;
 }
-.hub:after {
+/*.hub:after {
 	display: none;
-}
+}*/
 .hub h3 {
 	margin-bottom: 3rem;
 }
@@ -828,6 +836,19 @@ ul li {
 	background-position: center top;
 	width: 100%;
 	height: 348px;
+}
+.hub .container {
+	position: relative;
+}
+.hub .container:before {
+	content: "";
+	position: absolute;
+	top: -40px;
+	left: -45px;
+	background-image: url(../img/12.png);
+	width: 1322px;
+	height: 530px;
+	z-index: -1;
 }
 .rev {
 	overflow: hidden;
@@ -880,6 +901,7 @@ ul li {
 .step {
 	overflow: hidden;
 	padding-top: 0;
+	z-index: 2;
 }
 .step h3 {
 	margin-bottom: 8rem;
@@ -899,16 +921,6 @@ ul li {
 .step .main_btn {
 	margin-top: 3rem;
 }
-.step:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 803px;
-	background-image: url(../img/right_circle.png);
-	background-position: center top;
-	left: 0;
-	top: 235px;
-}
 .faq {
 	padding-top: 0;
 }
@@ -917,6 +929,17 @@ ul li {
 }
 .faq h3 {
 	margin-bottom: 4rem;
+	position: relative;
+}
+.faq h3:before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/pdf.png);
+	top: -50px;
+	right: -80px;
+	width: 397px;
+	height: 454px;
+	z-index: -1;
 }
 .faq .row {
 	display: -webkit-box;
@@ -932,6 +955,16 @@ ul li {
 }
 .faq .main_btn {
 	margin-top: 4rem;
+}
+.faq:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 803px;
+	background-image: url(../img/right_circle.png);
+	background-position: center top;
+	left: 0;
+	top: -604px;
 }
 .online {
 	padding-top: 0;

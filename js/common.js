@@ -67,6 +67,14 @@ document.getElementById("seconds"));
 		return false;
 	});
 
+	$('.scroll2').click( function(){
+	var scrollEl = $(this).attr('href');
+		if ($(scrollEl).length != 0) {
+			$('html, body').animate({ scrollTop: $(scrollEl).offset().top }, 800);
+		}
+		return false;
+	});
+
 
 	//popup
 	$('.popup').magnificPopup({
@@ -128,7 +136,7 @@ document.getElementById("seconds"));
 	});
 	*/
 
-	/*
+	
 	//validation
 		var locationURL = window.location.search;
 	if ( locationURL == "?p=179&lang=ua" ) {
@@ -152,9 +160,28 @@ document.getElementById("seconds"));
 				minlength: 2,
 				maxlength: 16
 			},
-			email: {
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+
+	$('#cols1Form').validate({
+		rules: {
+			name: {
 				required: true,
-				email: true
+				minlength: 2,
+				maxlength: 16
 			},
 			phone: {
 				required: true
@@ -166,9 +193,181 @@ document.getElementById("seconds"));
 				minlength: validationNameMax,
 				maxlength: validationNameMax
 			},
-			email: {
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#cols2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
 				required: validationName,
-				email: validationEmail
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#cols3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service1Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service2Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service3Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#service4Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#bottom_Form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#onlineForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
 			},
 			phone: {
 				required: validationPhone
@@ -176,7 +375,7 @@ document.getElementById("seconds"));
 		}
 	});
 
-	*/
+	
 
 
 });
