@@ -4,16 +4,22 @@
 
 $(document).ready(function() {
 	// remove placeholder after click
-	$(document).ready(function () {
-		$('input, textarea').focus(function(){
-			$(this).data('placeholder',$(this).attr('placeholder'))
-			$(this).attr('placeholder','');
-		});
-		$('input, textarea').blur(function(){
-			$(this).attr('placeholder', $(this).data('placeholder'));
-		});
- 	});
+	$('input, textarea').focus(function(){
+		$(this).data('placeholder',$(this).attr('placeholder'))
+		$(this).attr('placeholder','');
+	});
+	$('input, textarea').blur(function(){
+		$(this).attr('placeholder', $(this).data('placeholder'));
+	});
 
+	$('.toggle_btn').click(function(){
+		$(".sandwich").toggleClass("active");
+		if($('.menu').is(':visible')) {
+			$('.menu').slideUp(300);
+		} else {
+			$('.menu').slideDown(300);
+		};
+	});
 	
 
 	function updater(d, h, m, s) {

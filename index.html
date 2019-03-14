@@ -19,6 +19,13 @@
 
 	<!--BEGIN Header-->
 	<header>
+		<div class="toggle_btn">
+			<span class="sandwich">
+				<span class="sw-topper"></span>
+				<span class="sw-bottom"></span>
+				<span class="sw-footer"></span>
+			</span>
+		</div>
 		<div class="container relative">
 			<div class="top_head">
 				<div class="logo">
@@ -36,7 +43,7 @@
 				<div class="top_phone top_items">
 					<img src="img/phone.png" alt="">
 					<a href="tel:+380501234567">+38 050 123 45 67</a>
-					<a href="#topFormWrapper" class="top_btn_mobile">Заказать звонок</a>
+					<a href="#topFormWrapper" class="popup top_btn_mobile">Заказать звонок</a>
 				</div>
 				<div class="hidden-sm hidden-xs top_btn">
 					<a href="#topFormWrapper" class="popup">Заказать <br>звонок</a>
@@ -52,7 +59,7 @@
 				</ul>
 			</div>
 			<div class="main_head">
-				<h1>Профессиональный ремонт</h1>
+				<h1>Профессиональный <span>ремонт</span></h1>
 				<h2>и обслуживание автомобилей Tesla в Киеве</h2>
 				<ul class="trigger">
 					<li>Ремонт любой сложности и техобслуживание (ТО)</li>
@@ -70,7 +77,7 @@
 	<!-- END Header-->
 	<section class="adv relative" id="adv">
 		<div class="container">
-			<div class="row">
+			<div class="row row_1">
 				<div class="col-sm-6">
 					<h3>Неоспоримые преимущества работы с нами</h3>
 					<img src="img/adv_1.jpg" alt="">
@@ -84,7 +91,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row row_2">
 				<div class="col-sm-6">
 					<div class="adv_text adv_text_left adv_text_2">
 						<div>
@@ -137,7 +144,8 @@
 			<h3>Решаем любые вопросы, связанные <br>с ремонтом и обслуживанием Tesla</h3>
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="img/question_1.jpg" alt="">
+					<img class="hidden-xs" src="img/question_1.jpg" alt="">
+					<img class="visible-xs" src="img/question_1_m.jpg" alt="">
 				</div>
 				<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 					<h4>Ремонт</h4>
@@ -156,6 +164,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6 col-lg-5">
+					<img src="img/question_2_m.jpg" alt="" class="visible-xs">
 					<h4>ТО – техобслуживание</h4>
 					<p>Раз в год или каждые 20 000 км.:</p>
 					<ul>
@@ -170,13 +179,14 @@
 					</ul>
 					<a href="#service3FormWrapper" class="popup main_btn">Записаться на сервис</a>
 				</div>
-				<div class="col-sm-6 col-lg-offset-1">
+				<div class="col-sm-6 col-lg-offset-1 hidden-xs">
 					<img src="img/question_2.jpg" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="img/question_3.jpg" alt="">
+					<img class="hidden-xs" src="img/question_3.jpg" alt="">
+					<img class="visible-xs" src="img/question_3_m.jpg" alt="">
 				</div>
 				<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 					<h4>Опциональные услуги</h4>
@@ -262,7 +272,7 @@
 						</span>
 					</div>
 				</div>
-				<div class="col-md-5 col-lg-4 col-lg-offset-1 open_form_right hidden-sm hidden-xs">
+				<div class="col-md-5 col-lg-4 col-lg-offset-1 open_form_right hidden-sm">
 					<div class="form_wrapper" id="bottomWrapper">
 						<h6>Заполните форму,</h6>
 						<p>и наш специалист свяжется <br>с Вами в течение 15 минут, чтобы уточнить дату и время Вашего приезда</p>
@@ -274,7 +284,7 @@
 						</form>
 					</div>
 				</div>
-				<a href="#bottomWrapper" class="popup main_btn hidden-md hidden-lg">Записаться <br>на диагностику</a>
+				<!-- <a href="#bottomWrapper" class="popup main_btn hidden-md hidden-lg">Записаться <br>на диагностику</a> -->
 			</div>
 		</div>
 	</section>
@@ -298,7 +308,7 @@
 						<div class="hub_right_wrapper_right">
 							<p>Года опыта работы <br>с автомобилями Tesla</p>
 							<p>Профессиональных <br>сотрудников, которые знают <br>все об автомобилях Tesla</p>
-							<p>Постоянных клиентов, некоторые с нами уже 3 года</p>
+							<p>Постоянных клиентов, <br>некоторые с нами уже 3 года</p>
 						</div>
 					</div>
 				</div>
@@ -327,7 +337,7 @@
 					<div class="next"></div>
 					<div class="slider">
 						<div class="slider_item">
-							<div class="col-sm-4">
+							<div class="col-sm-4 hidden-xs">
 								<img src="img/rev_1.jpg" alt="">
 							</div>
 							<div class="col-sm-8">
@@ -336,6 +346,7 @@
 									Александр, <br>Тесла Модел 3
 								</strong>
 							</div>
+							<img class="visible-xs" src="img/rev_1.jpg" alt="">
 						</div>
 						<div class="slider_item">
 							<div class="col-sm-4">
@@ -381,21 +392,24 @@
 			<h3>Как мы работаем</h3>
 			<div class="row">
 				<div class="col-sm-3">
-					<img class="main_picts" src="img/step_1.jpg" alt="">
+					<img class="hidden-xs main_picts" src="img/step_1.jpg" alt="">
+					<img class="visible-xs main_picts" src="img/step_1_m.jpg" alt="">
 					<h4>Выберите услугу</h4>
 					<p>Наш менеджер свяжется <br>с Вами для уточнения списка работ и точной даты</p>
 					<a href="#question" class="scroll2 main_btn">Выбрать услугу</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="main_picts" src="img/step_2.jpg" alt="">
+					<img class="hidden-xs main_picts" src="img/step_2.jpg" alt="">
+					<img class="visible-xs main_picts" src="img/step_2_m.jpg" alt="">
 					<h4>Приезжаете <br>в назначенное время</h4>
 					<p>Наши специалисты делают диагностику, составляют смету и Вы оплачиваете.</p>
 				</div>
 				<div class="col-sm-3">
-					<img class="main_picts" src="img/step_3.jpg" alt="">
+					<img class="hidden-xs main_picts" src="img/step_3.jpg" alt="">
+					<img class="visible-xs main_picts" src="img/step_3_m.jpg" alt="">
 					<h4>Забираете Ваш автомобиль</h4>
 					<p>Забираете отремонтиро-<br>ванный автомобиль <br>в оговоренное время.</p>
-					<img src="img/step_pict.png" alt="" class="step_pict">
+					<!-- <img src="img/step_pict.png" alt="" class="step_pict"> -->
 				</div>
 			</div>
 		</div>
@@ -404,8 +418,9 @@
 	<section class="faq">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-lg-5">
-					<img src="img/faq_pict.jpg" alt="">
+				<div class="col-sm-6 col-lg-5 hidden-xs">
+					<!-- <img src="img/faq_pict.jpg" alt=""> -->
+					<img src="img/11.jpg" alt="">
 				</div>
 				<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 					<h3>Часто задаваемые <br>вопросы и ответы на них</h3>
@@ -500,7 +515,7 @@
 				Ваши имя и e-mail не передаются третьим лицам, ни при каких условиях кроме случаев, связанных с исполнением требований законодательства. Ваше имя и e-mail на защищенных серверах сервиса getresponse.com и используются в соответствии с его политикой конфиденциальности.<br><br>
 				Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.<br><br>
 				<b>Как эти данные используются</b><br>
-				На сайте www.site.com используются куки (Cookies) и данные о посетителях сервиса Google Analytics.<br><br>
+				На сайте www.tesla-hub.com.ua используются куки (Cookies) и данные о посетителях сервиса Google Analytics.<br><br>
 				При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей.<br><br>
 				Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.<br><br>
 				<b> Как эти данные защищаются</b><br>
